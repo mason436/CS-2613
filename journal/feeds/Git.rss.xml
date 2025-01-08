@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<rss version="2.0">
+ <channel>
+  <title>My Blog: Posts tagged 'Git'</title>
+  <description>My Blog: Posts tagged 'Git'</description>
+  <link>http://www.example.com/tags/Git.html</link>
+  <lastBuildDate>Wed, 08 Jan 2025 12:47:37 UT</lastBuildDate>
+  <pubDate>Wed, 08 Jan 2025 12:47:37 UT</pubDate>
+  <ttl>1800</ttl>
+  <item>
+   <title>Lab 1 Journal</title>
+   <link>http://www.example.com/2025/01/lab-1-journal.html?utm_source=Git&amp;utm_medium=RSS</link>
+   <guid isPermaLink="false">urn:http-www-example-com:-2025-01-lab-1-journal-html</guid>
+   <pubDate>Wed, 08 Jan 2025 12:47:37 UT</pubDate>
+   <author>The Unknown Author</author>
+   <description>
+&lt;p&gt;&lt;em&gt;Replace this with your post text. Add one or more comma-separated Tags above. The special tag &lt;code&gt;DRAFT&lt;/code&gt; will prevent the post from being published.&lt;/em&gt;&lt;/p&gt;&lt;a href="http://www.example.com/2025/01/lab-1-journal.html?utm_source=Git&amp;amp;utm_medium=RSS"&gt;&lt;em&gt;More&amp;hellip;&lt;/em&gt;&lt;/a&gt;</description></item></channel></rss>

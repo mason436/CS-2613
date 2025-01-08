@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+ <title type="text">My Blog: Posts tagged 'Git'</title>
+ <link rel="self" href="http://www.example.com/feeds/Git.atom.xml" />
+ <link href="http://www.example.com/tags/Git.html" />
+ <id>urn:http-www-example-com:-tags-Git-html</id>
+ <updated>2025-01-08T12:47:37Z</updated>
+ <entry>
+  <title type="text">Lab 1 Journal</title>
+  <link rel="alternate" href="http://www.example.com/2025/01/lab-1-journal.html?utm_source=Git&amp;utm_medium=Atom" />
+  <id>urn:http-www-example-com:-2025-01-lab-1-journal-html</id>
+  <published>2025-01-08T12:47:37Z</published>
+  <updated>2025-01-08T12:47:37Z</updated>
+  <author>
+   <name>The Unknown Author</name></author>
+  <content type="html">
+&lt;p&gt;&lt;em&gt;Replace this with your post text. Add one or more comma-separated Tags above. The special tag &lt;code&gt;DRAFT&lt;/code&gt; will prevent the post from being published.&lt;/em&gt;&lt;/p&gt;&lt;a href="http://www.example.com/2025/01/lab-1-journal.html?utm_source=Git&amp;amp;utm_medium=Atom"&gt;&lt;em&gt;More&amp;hellip;&lt;/em&gt;&lt;/a&gt;</content></entry></feed>

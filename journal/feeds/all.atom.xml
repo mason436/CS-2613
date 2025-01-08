@@ -4,7 +4,17 @@
  <link rel="self" href="http://www.example.com/feeds/all.atom.xml" />
  <link href="http://www.example.com/index.html" />
  <id>urn:http-www-example-com:-index-html</id>
- <updated>2025-01-06T12:57:35Z</updated>
+ <updated>2025-01-08T12:47:37Z</updated>
+ <entry>
+  <title type="text">Lab 1 Journal</title>
+  <link rel="alternate" href="http://www.example.com/2025/01/lab-1-journal.html?utm_source=all&amp;utm_medium=Atom" />
+  <id>urn:http-www-example-com:-2025-01-lab-1-journal-html</id>
+  <published>2025-01-08T12:47:37Z</published>
+  <updated>2025-01-08T12:47:37Z</updated>
+  <author>
+   <name>The Unknown Author</name></author>
+  <content type="html">
+&lt;p&gt;&lt;em&gt;Replace this with your post text. Add one or more comma-separated Tags above. The special tag &lt;code&gt;DRAFT&lt;/code&gt; will prevent the post from being published.&lt;/em&gt;&lt;/p&gt;&lt;a href="http://www.example.com/2025/01/lab-1-journal.html?utm_source=all&amp;amp;utm_medium=Atom"&gt;&lt;em&gt;More&amp;hellip;&lt;/em&gt;&lt;/a&gt;</content></entry>
  <entry>
   <title type="text">New post title</title>
   <link rel="alternate" href="http://www.example.com/2025/01/new-post-title.html?utm_source=all&amp;utm_medium=Atom" />
