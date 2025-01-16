@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+ <title type="text">My Blog: Posts tagged 'Lab3'</title>
+ <link rel="self" href="http://www.example.com/feeds/Lab3.atom.xml" />
+ <link href="http://www.example.com/tags/Lab3.html" />
+ <id>urn:http-www-example-com:-tags-Lab3-html</id>
+ <updated>2025-01-13T04:35:04Z</updated>
+ <entry>
+  <title type="text">Lab 3 Mason Tozer</title>
+  <link rel="alternate" href="http://www.example.com/2025/01/lab-3-mason-tozer.html?utm_source=Lab3&amp;utm_medium=Atom" />
+  <id>urn:http-www-example-com:-2025-01-lab-3-mason-tozer-html</id>
+  <published>2025-01-13T04:35:04Z</published>
+  <updated>2025-01-13T04:35:04Z</updated>
+  <author>
+   <name>The Unknown Author</name></author>
+  <content type="html">
+&lt;h1 id="cs-2613-lab-3-continuing-with-racket-and-an-introduction-to-test-drive-development"&gt;CS 2613 Lab 3: Continuing with Racket, and an Introduction to Test Drive Development&lt;/h1&gt;
+
+&lt;p&gt;For our third lab in CS 2613, we continued where we left off in Racket. We went over the 3 questions (What is a remote? What is merging? and What is a conflict?) which were given to us at the end of the last lab.&lt;/p&gt;
+
+&lt;p&gt;Jumping into the new material, we downloaded professor Bremner&amp;rsquo;s &lt;a href="https://www.cs.unb.ca/~bremner/teaching/cs2613/labs/L03/arith.rkt/"&gt;arith.rkt&lt;/a&gt; program, written in Racket, and we were asked to run and troubleshoot the program for errors. This gave us a chance to try the Stepper function within DrRacket.&lt;/p&gt;
+
+&lt;ul&gt;
+ &lt;li&gt;The &lt;a href="https://docs.racket-lang.org/drracket/buttons.html#%28idx._%28gentag._5._%28lib._scribblings%2Fdrracket%2Fdrracket..scrbl%29%29%29"&gt;DrRacket Stepper&lt;/a&gt; is a tool used for troubleshooting your programs. It is a tool that proceeds though your program&amp;rsquo;s code one &amp;lsquo;step&amp;rsquo; at a time. A step refers to the definitions and expressions written within your code. This &amp;lsquo;stepping&amp;rsquo; motion can be an instrumental tool when it comes to debugging as it allows you to follow your code&amp;rsquo;s path and reveal where the error lies. Such a tool is especially advantageous for the use with recursive algorithms, as many times they may compile but not function correctly such as giving incorrect answers or entering infinite loops.&lt;/li&gt;&lt;/ul&gt;
+
+&lt;p&gt;Then we were asked to follow exercise 7 in unit 3, from the text &lt;a href="https://www.cs.unb.ca/~bremner/teaching/cs2613/books/FICS/Syntax_and_semantics.html"&gt;A Functional Introduction To Computer Science&lt;/a&gt; . We discussed the importance of unit testing within programming, and we learnt about Test Driven Development. Test  Driven Development (TDD) is a way of programming that involves writing tests before writing the code. The test will fail at first, but then the programmer will code the minimum amount needed to have the test pass, and then refactor the code and try new test cases. This way of development is a proven method to help improve code quality, it&amp;rsquo;s overall faster for debugging, and it helps prevent changes to code from breaking all functionality.&lt;/p&gt;
+
+&lt;p&gt;In this lab, I learnt about concept of Test Driven Development, and well as some new skills with Racket. While debugging is a very common skill that has been used in every coding class I&amp;rsquo;ve had to date (as seen in the Java courses CS 1073 and CS 1083, for example), the idea of Test Driven Development is a new and refreshing idea for me, and a concept I plan on putting to use in the future. I believe this skill would be exceptionally usefully when tackling problems that requires complex algorithms, as it will also help break complex problems down into more approachable tasks. It was also interesting to put this skill to work in today&amp;rsquo;s lab, and to experience a new (to me) approach to coding. I am still finding Racket to be a bit confusing with it&amp;rsquo;s syntax, as I am more used to Java and Python, but my knowledge and slowly growing and I&amp;rsquo;m excited to have another programming language under my belt. Overall, I am excited for the future of this course and what is planned for us. I hope I can leave with a much greater knowledge in coding, and have these hands on skills to apply later on in my career.&lt;/p&gt;&lt;a href="http://www.example.com/2025/01/lab-3-mason-tozer.html?utm_source=Lab3&amp;amp;utm_medium=Atom"&gt;&lt;em&gt;More&amp;hellip;&lt;/em&gt;&lt;/a&gt;</content></entry></feed>

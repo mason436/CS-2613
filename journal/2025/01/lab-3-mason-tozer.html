@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>Lab 3 Mason Tozer</title>
+    <meta name="description" content="CS 2613 Lab 3: Continuing with Racket, and an Introduction to Test Drive Development:  For our third lab in CS 2613, we continued where we left off in Racket. We went over the 3 questions (What is a remote? What is merging? and What is a conflict?) which ...">
+    <meta name="author"      content="The Unknown Author">
+    <meta name="keywords"    content="Lab3, CS2613, Racket, Frog, Git">
+    <meta name="viewport"    content="width=device-width, initial-scale=1.0">
+    <link rel="icon"      href="/favicon.ico">
+    <link rel="canonical" href="http://www.example.com/2025/01/lab-3-mason-tozer.html">
+    <link rel="next" href="/2025/01/lab-8-mason-tozer.html">
+    <link rel="prev" href="/2025/01/lab-4-mason-tozer.html">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/pygments.css">
+    <link rel="stylesheet" type="text/css" href="/css/scribble.css">
+    <link rel="stylesheet" type="text/css" href="/css/custom.css">
+    <!-- Feeds -->
+    <link rel="alternate" type="application/atom+xml"
+          href="/feeds/all.atom.xml" title="Atom Feed">
+    <link rel="alternate" type="application/rss+xml"
+          href="/feeds/all.rss.xml" title="RSS Feed">
+    <!-- JS -->
+    <script type="text/javascript">
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-xxxxx', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </head>
+  <body>
+
+    <!-- A standard Twitter Bootstrap nav bar -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <div class="container">
+
+      <a href="/index.html" class="navbar-brand">My Blog Brand</a>
+
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+              data-target="#navbar_collapse" aria-controls="navbar_collapse"
+              aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbar_collapse">
+          <ul class="navbar-nav mr-auto">
+
+
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                Tags <b class="caret"></b>
+              </a>
+
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="/tags/CS2613.html">CS2613</a><a class="dropdown-item" href="/tags/Frog.html">Frog</a><a class="dropdown-item" href="/tags/Git.html">Git</a><a class="dropdown-item" href="/tags/Lab1.html">Lab1</a><a class="dropdown-item" href="/tags/Lab2.html">Lab2</a><a class="dropdown-item" href="/tags/Lab3.html">Lab3</a><a class="dropdown-item" href="/tags/Lab4.html">Lab4</a><a class="dropdown-item" href="/tags/Racket.html">Racket</a>
+              </div>
+            </li>
+
+            <li>
+              <a class="nav-link" href="/About.html">About</a>
+            </li> 
+
+            <li class="nav-item">
+              <a class="nav-link" href="/feeds/all.atom.xml">Atom</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="/feeds/all.rss.xml">RSS</a>
+            </li>
+          </ul>
+      </div>
+
+      </div>
+    </nav>
+
+
+    <div class="container">
+      <div class="row">
+
+        <!-- Main column -->
+        <div id="content" class="col-md-12">
+
+
+
+
+
+          <article>
+  <header>
+    <h1>Lab 3 Mason Tozer</h1>
+    <p class='date-and-tags'>
+<time datetime="2025-01-13" pubdate="true">2025-01-13</time> :: <span class="tags"><a href="/tags/Lab3.html">Lab3</a>, <a href="/tags/CS2613.html">CS2613</a>, <a href="/tags/Racket.html">Racket</a>, <a href="/tags/Frog.html">Frog</a>, <a href="/tags/Git.html">Git</a></span></p>
+    <p class='authors'>By: <span class="authors">The Unknown Author</span></p>
+  </header>
+
+<h1 id="cs-2613-lab-3-continuing-with-racket-and-an-introduction-to-test-drive-development">CS 2613 Lab 3: Continuing with Racket, and an Introduction to Test Drive Development</h1>
+
+<p>For our third lab in CS 2613, we continued where we left off in Racket. We went over the 3 questions (What is a remote? What is merging? and What is a conflict?) which were given to us at the end of the last lab.</p>
+
+<p>Jumping into the new material, we downloaded professor Bremner&rsquo;s <a href="https://www.cs.unb.ca/~bremner/teaching/cs2613/labs/L03/arith.rkt/">arith.rkt</a> program, written in Racket, and we were asked to run and troubleshoot the program for errors. This gave us a chance to try the Stepper function within DrRacket.</p>
+
+<ul>
+ <li>The <a href="https://docs.racket-lang.org/drracket/buttons.html#%28idx._%28gentag._5._%28lib._scribblings%2Fdrracket%2Fdrracket..scrbl%29%29%29">DrRacket Stepper</a> is a tool used for troubleshooting your programs. It is a tool that proceeds though your program&rsquo;s code one &lsquo;step&rsquo; at a time. A step refers to the definitions and expressions written within your code. This &lsquo;stepping&rsquo; motion can be an instrumental tool when it comes to debugging as it allows you to follow your code&rsquo;s path and reveal where the error lies. Such a tool is especially advantageous for the use with recursive algorithms, as many times they may compile but not function correctly such as giving incorrect answers or entering infinite loops.</li></ul>
+
+<p>Then we were asked to follow exercise 7 in unit 3, from the text <a href="https://www.cs.unb.ca/~bremner/teaching/cs2613/books/FICS/Syntax_and_semantics.html">A Functional Introduction To Computer Science</a> . We discussed the importance of unit testing within programming, and we learnt about Test Driven Development. Test  Driven Development (TDD) is a way of programming that involves writing tests before writing the code. The test will fail at first, but then the programmer will code the minimum amount needed to have the test pass, and then refactor the code and try new test cases. This way of development is a proven method to help improve code quality, it&rsquo;s overall faster for debugging, and it helps prevent changes to code from breaking all functionality.</p>
+
+<p>In this lab, I learnt about concept of Test Driven Development, and well as some new skills with Racket. While debugging is a very common skill that has been used in every coding class I&rsquo;ve had to date (as seen in the Java courses CS 1073 and CS 1083, for example), the idea of Test Driven Development is a new and refreshing idea for me, and a concept I plan on putting to use in the future. I believe this skill would be exceptionally usefully when tackling problems that requires complex algorithms, as it will also help break complex problems down into more approachable tasks. It was also interesting to put this skill to work in today&rsquo;s lab, and to experience a new (to me) approach to coding. I am still finding Racket to be a bit confusing with it&rsquo;s syntax, as I am more used to Java and Python, but my knowledge and slowly growing and I&rsquo;m excited to have another programming language under my belt. Overall, I am excited for the future of this course and what is planned for us. I hope I can leave with a much greater knowledge in coding, and have these hands on skills to apply later on in my career.</p>
+<!-- more-->
+  <footer>
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+      var disqus_config = function () {
+        this.page.identifier = undefined;
+        this.page.url = undefined;
+        this.page.title = undefined;
+        this.page.category_id = undefined;
+      };
+      var disqus_shortname = 'shortname';
+      (function() {
+          var dsq = document.createElement('script');
+          dsq.type = 'text/javascript';
+          dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          dsq.setAttribute('data-timestamp', +new Date());
+          (document.head || document.body).appendChild(dsq);
+      })();
+    </script>
+    <noscript>
+      Please enable JavaScript to view the
+      <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+    </noscript>
+    <div class="row justify-content-center">
+      <nav aria-label="Page Navigation">
+        <ul class="pagination">
+          <li class="page-item">
+            <a class="page-link" href="/2025/01/lab-8-mason-tozer.html"
+               aria-label="Previous">
+              <span aria-hidden="true">&larr; Lab 8 Mason Tozer</span>
+            </a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="/2025/01/lab-4-mason-tozer.html"
+               aria-label="Next">
+              <span aria-hidden="true">Lab 4 Mason Tozer &rarr;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</article>
+        </div>
+      </div>
+      <footer>
+        <hr />
+        <p><a href="https://twitter.com/racketlang"
+              class="twitter-follow-button"
+              data-show-count="false"
+              data-lang="en">
+             "Follow RacketLang"
+           </a>
+           <script type="text/javascript">
+             !function(d,s,id){
+                 var js,fjs=d.getElementsByTagName(s)[0];
+                 if(!d.getElementById(id)){
+                     js=d.createElement(s);
+                     js.id=id;
+                     js.src="//platform.twitter.com/widgets.js";
+                     fjs.parentNode.insertBefore(js,fjs);
+                 }
+             }(document,"script","twitter-wjs");
+           </script></p>
+        <p>Site generated
+        by <a href="https://github.com/greghendershott/frog">Frog</a>,
+        the <strong>fr</strong>ozen bl<strong>og</strong> tool.</p>
+        <p>Using <a href="http://twitter.github.com/bootstrap/index.html">Bootstrap</a>.</p>
+        <p><em>Your legal notice here</em>.</p>
+      </footer>
+    </div>
+    <!-- </body> JS -->
+    <script type="text/javascript" src="/js/jquery-3.2.1.slim.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

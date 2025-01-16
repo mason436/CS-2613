@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>Lab 8 Mason Tozer</title>
+    <meta name="description" content="CS 2613 Lab 2: Finishing Up With Git and Starting off with Racket:  For our second lab in CS 2613, we continued where we left off from the first lab. We were given some pre-lab instructions to check and ensure that we understood the first lab correctly, a...">
+    <meta name="author"      content="The Unknown Author">
+    <meta name="keywords"    content="Lab2, CS2613, Racket, Frog, Git">
+    <meta name="viewport"    content="width=device-width, initial-scale=1.0">
+    <link rel="icon"      href="/favicon.ico">
+    <link rel="canonical" href="http://www.example.com/2025/01/lab-8-mason-tozer.html">
+    <link rel="next" href="/2025/01/lab-1-mason-tozer.html">
+    <link rel="prev" href="/2025/01/lab-3-mason-tozer.html">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/pygments.css">
+    <link rel="stylesheet" type="text/css" href="/css/scribble.css">
+    <link rel="stylesheet" type="text/css" href="/css/custom.css">
+    <!-- Feeds -->
+    <link rel="alternate" type="application/atom+xml"
+          href="/feeds/all.atom.xml" title="Atom Feed">
+    <link rel="alternate" type="application/rss+xml"
+          href="/feeds/all.rss.xml" title="RSS Feed">
+    <!-- JS -->
+    <script type="text/javascript">
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-xxxxx', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </head>
+  <body>
+
+    <!-- A standard Twitter Bootstrap nav bar -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <div class="container">
+
+      <a href="/index.html" class="navbar-brand">My Blog Brand</a>
+
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+              data-target="#navbar_collapse" aria-controls="navbar_collapse"
+              aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbar_collapse">
+          <ul class="navbar-nav mr-auto">
+
+
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                Tags <b class="caret"></b>
+              </a>
+
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="/tags/CS2613.html">CS2613</a><a class="dropdown-item" href="/tags/Frog.html">Frog</a><a class="dropdown-item" href="/tags/Git.html">Git</a><a class="dropdown-item" href="/tags/Lab1.html">Lab1</a><a class="dropdown-item" href="/tags/Lab2.html">Lab2</a><a class="dropdown-item" href="/tags/Lab3.html">Lab3</a><a class="dropdown-item" href="/tags/Lab4.html">Lab4</a><a class="dropdown-item" href="/tags/Racket.html">Racket</a>
+              </div>
+            </li>
+
+            <li>
+              <a class="nav-link" href="/About.html">About</a>
+            </li> 
+
+            <li class="nav-item">
+              <a class="nav-link" href="/feeds/all.atom.xml">Atom</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="/feeds/all.rss.xml">RSS</a>
+            </li>
+          </ul>
+      </div>
+
+      </div>
+    </nav>
+
+
+    <div class="container">
+      <div class="row">
+
+        <!-- Main column -->
+        <div id="content" class="col-md-12">
+
+
+
+
+
+          <article>
+  <header>
+    <h1>Lab 8 Mason Tozer</h1>
+    <p class='date-and-tags'>
+<time datetime="2025-01-08" pubdate="true">2025-01-08</time> :: <span class="tags"><a href="/tags/Lab2.html">Lab2</a>, <a href="/tags/CS2613.html">CS2613</a>, <a href="/tags/Racket.html">Racket</a>, <a href="/tags/Frog.html">Frog</a>, <a href="/tags/Git.html">Git</a></span></p>
+    <p class='authors'>By: <span class="authors">The Unknown Author</span></p>
+  </header>
+
+<h1 id="cs-2613-lab-2-finishing-up-with-git-and-starting-off-with-racket">CS 2613 Lab 2: Finishing Up With Git and Starting off with Racket</h1>
+
+<p>For our second lab in CS 2613, we continued where we left off from the first lab. We were given some pre-lab instructions to check and ensure that we understood the first lab correctly, and were given a reading on how to write <a href="https://git-scm.com/book/en/v2/Distributed-Git-Contributing-to-a-Project#_commit_guidelines">good git commit messages</a>.</p>
+
+<p>We started our second lab off by first finishing up our tutorial in git. We learned about the <em>git grep</em> command, which is a fast and useful way to find strings within our git repositories. As well, we learned about the <em>git diff &mdash;cached</em> command, which will show us what has been modified since our last commit, before we commit the new changes. Our final lesson on the basics of Git discussed cleaning up generated files, which are files created by some tool or software, and can add some deceitful changes in our project&rsquo;s commits history. It is best practice to &lsquo;clean&rsquo; up these files, and we can do so by running the Racket command <em>raco frog &mdash;clean</em>. We then used the previously learnt <em>git diff</em> command to observe and learn what the frog clean command performs. We observed that it deleted the generated files for us, and saved us from having to manually delete each file, and avoid possible deleting an incorrect file. We then shared our best commit message with a neighbour, and gave some constructive feedback if we had any.</p>
+
+<p>After completing our discussion on git, we then started to learn the basics of coding with the programing language <em>Racket</em>.</p>
+
+<p>-          <a href="https://docs.racket-lang.org/guide/intro.html">Racket</a> is a beginner friendly, high level, programming language. Racket is used mostly for scripting, research, and for teaching computer programming as it is a very approachable language.</p>
+
+<p>We will mostly be following the text <a href="https://lms.unb.ca/d2l/home/257026"><em>A Functional Introduction To Computer Science</em></a> as a guide for learning Racket. </p>
+
+<p>The first few exercises in Racket given to us were covering some of the basics, such as a helloworld program, and some basic arithmetic. We were given some basic code and in groups of 2&ndash;3, we were asked to try and identify what was wrong about each line of code and to try and fix it before trying it in DrRacket. At the end, we were given some reading to do before the next lab, like reading about Syntax and Semantics, the first two sections on the stepper function with DrRacket, and check-expects, which are all found in the text <a href="https://lms.unb.ca/d2l/home/257026"><em>A Functional Introduction To Computer Science</em></a>. We are also asked three questions; - What is a <em>remote</em> ?  - A remote in git is a repository that can be accessed by multiple people, and it is saved in one generalized location. - What is <em>merging</em> ?  - Merging within git is when two or more branches are combined into one. - What is a <em>conflict</em> ?  - A conflict is when two branches of a project have different changes made to the same file, which usually only happens when programming in a team environment/ with two or more developers.</p>
+
+<p>Some concepts learnt today are familiar from other courses, such as the use of git, which was used in my past software engineering class, and the idea of basic programming like creating the helloworld program, which was done in CS1073. But Racket is a whole new language and skill set for me, and I find the syntax has been a bit of learning curve, but I am excited to become better at it with more practice throughout the course. Though I do think the way Racket&rsquo;s syntax does arithmetic is rather interesting and unique compare to my previous languages learned.</p>
+<!-- more-->
+  <footer>
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+      var disqus_config = function () {
+        this.page.identifier = undefined;
+        this.page.url = undefined;
+        this.page.title = undefined;
+        this.page.category_id = undefined;
+      };
+      var disqus_shortname = 'shortname';
+      (function() {
+          var dsq = document.createElement('script');
+          dsq.type = 'text/javascript';
+          dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          dsq.setAttribute('data-timestamp', +new Date());
+          (document.head || document.body).appendChild(dsq);
+      })();
+    </script>
+    <noscript>
+      Please enable JavaScript to view the
+      <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+    </noscript>
+    <div class="row justify-content-center">
+      <nav aria-label="Page Navigation">
+        <ul class="pagination">
+          <li class="page-item">
+            <a class="page-link" href="/2025/01/lab-1-mason-tozer.html"
+               aria-label="Previous">
+              <span aria-hidden="true">&larr; Lab 1 Mason Tozer</span>
+            </a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="/2025/01/lab-3-mason-tozer.html"
+               aria-label="Next">
+              <span aria-hidden="true">Lab 3 Mason Tozer &rarr;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</article>
+        </div>
+      </div>
+      <footer>
+        <hr />
+        <p><a href="https://twitter.com/racketlang"
+              class="twitter-follow-button"
+              data-show-count="false"
+              data-lang="en">
+             "Follow RacketLang"
+           </a>
+           <script type="text/javascript">
+             !function(d,s,id){
+                 var js,fjs=d.getElementsByTagName(s)[0];
+                 if(!d.getElementById(id)){
+                     js=d.createElement(s);
+                     js.id=id;
+                     js.src="//platform.twitter.com/widgets.js";
+                     fjs.parentNode.insertBefore(js,fjs);
+                 }
+             }(document,"script","twitter-wjs");
+           </script></p>
+        <p>Site generated
+        by <a href="https://github.com/greghendershott/frog">Frog</a>,
+        the <strong>fr</strong>ozen bl<strong>og</strong> tool.</p>
+        <p>Using <a href="http://twitter.github.com/bootstrap/index.html">Bootstrap</a>.</p>
+        <p><em>Your legal notice here</em>.</p>
+      </footer>
+    </div>
+    <!-- </body> JS -->
+    <script type="text/javascript" src="/js/jquery-3.2.1.slim.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

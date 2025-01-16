@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+ <title type="text">My Blog: My Blog</title>
+ <link rel="self" href="http://www.example.com/feeds/all.atom.xml" />
+ <link href="http://www.example.com/index.html" />
+ <id>urn:http-www-example-com:-index-html</id>
+ <updated>2025-01-15T04:35:04Z</updated>
+ <entry>
+  <title type="text">Lab 4 Mason Tozer</title>
+  <link rel="alternate" href="http://www.example.com/2025/01/lab-4-mason-tozer.html?utm_source=all&amp;utm_medium=Atom" />
+  <id>urn:http-www-example-com:-2025-01-lab-4-mason-tozer-html</id>
+  <published>2025-01-15T04:35:04Z</published>
+  <updated>2025-01-15T04:35:04Z</updated>
+  <author>
+   <name>The Unknown Author</name></author>
+  <content type="html">
+&lt;h1 id="cs-2613-lab-4-continued-work-in-racket"&gt;CS 2613 Lab 4: Continued Work in Racket&lt;/h1&gt;
+
+&lt;p&gt;For our fourth lab in CS 2613, we started with the reading of &lt;a href="https://www.cs.unb.ca/~bremner/teaching/cs2613/books/FICS/Structures.html"&gt;unit 4 from A Functional Introduction to Computer Science&lt;/a&gt;. We were given new questions to think about for out next lab:  - The programming languages we will study this term are all dynamically typed. This means that not only the value but also the type of variables can change at runtime. Why does this make testing even more important? - What kind of software problems is testing not well suited to find? - Why might mutable state (e.g. instance variables in Java) make writing unit tests harder? As well, we went over the questions presented in our previous lab, lab 3: - The programming languages we will study this term are all _dynamically typed. This means that not only the value but also the type of variables can change at runtime. Why does this make testing even more important? - What kind of software problems is testing not well suited to find? - Why might mutable state (e.g. instance variables in Java) make writing unit tests harder? After the group discussion, we dove right back into our learning in Racket. We created out Lab folder for the day, and started with &lt;a href="https://www.cs.unb.ca/~bremner/teaching/cs2613/books/FICS/Structures.html#%28part._.Correctness%29"&gt;exercise 11&lt;/a&gt; from our text. Today&amp;rsquo;s coding lesson focused on recursive algorithms with Racket, and our program had us simulating natural numbers in an abstract way. We then started working on a second function from exercise 11 to simulate natural numbers. We then learnt about structural recursion, and used it on the natural numbers functions that we created earlier in the lab. We were then giving the reading of section 5.1 and 5.2, to be read before the next lab.&lt;/p&gt;
+
+&lt;p&gt;The concept of simulating natural numbers in this manner, and recursion within Racket, were new concepts to me within this lab. Though, I have worked with the concept of recursion in previous classes, such as CS 2383, data structures and algorithms, as well as originally learning it in our second Java class, CS 1083. I got to continue practice in Racket, which still feels like a very new skill to me, as well as getting to try implementing recursion with Racket. I found today&amp;rsquo;s lab to be overall a bit confusing to be fully honest. I recognize that I need to catch up on my knowledge within Racket, and I plan to do so over the next few days and the weekend so that I am feeling more prepared for Monday&amp;rsquo;s class. Though I don&amp;rsquo;t fully understand Racket now, I am eager to learn it and to try my best to excel in this class. I am grateful to have the text A Functional Introduction To Computer Science as a handy reference.&lt;/p&gt;&lt;a href="http://www.example.com/2025/01/lab-4-mason-tozer.html?utm_source=all&amp;amp;utm_medium=Atom"&gt;&lt;em&gt;More&amp;hellip;&lt;/em&gt;&lt;/a&gt;</content></entry>
+ <entry>
+  <title type="text">Lab 3 Mason Tozer</title>
+  <link rel="alternate" href="http://www.example.com/2025/01/lab-3-mason-tozer.html?utm_source=all&amp;utm_medium=Atom" />
+  <id>urn:http-www-example-com:-2025-01-lab-3-mason-tozer-html</id>
+  <published>2025-01-13T04:35:04Z</published>
+  <updated>2025-01-13T04:35:04Z</updated>
+  <author>
+   <name>The Unknown Author</name></author>
+  <content type="html">
+&lt;h1 id="cs-2613-lab-3-continuing-with-racket-and-an-introduction-to-test-drive-development"&gt;CS 2613 Lab 3: Continuing with Racket, and an Introduction to Test Drive Development&lt;/h1&gt;
+
+&lt;p&gt;For our third lab in CS 2613, we continued where we left off in Racket. We went over the 3 questions (What is a remote? What is merging? and What is a conflict?) which were given to us at the end of the last lab.&lt;/p&gt;
+
+&lt;p&gt;Jumping into the new material, we downloaded professor Bremner&amp;rsquo;s &lt;a href="https://www.cs.unb.ca/~bremner/teaching/cs2613/labs/L03/arith.rkt/"&gt;arith.rkt&lt;/a&gt; program, written in Racket, and we were asked to run and troubleshoot the program for errors. This gave us a chance to try the Stepper function within DrRacket.&lt;/p&gt;
+
+&lt;ul&gt;
+ &lt;li&gt;The &lt;a href="https://docs.racket-lang.org/drracket/buttons.html#%28idx._%28gentag._5._%28lib._scribblings%2Fdrracket%2Fdrracket..scrbl%29%29%29"&gt;DrRacket Stepper&lt;/a&gt; is a tool used for troubleshooting your programs. It is a tool that proceeds though your program&amp;rsquo;s code one &amp;lsquo;step&amp;rsquo; at a time. A step refers to the definitions and expressions written within your code. This &amp;lsquo;stepping&amp;rsquo; motion can be an instrumental tool when it comes to debugging as it allows you to follow your code&amp;rsquo;s path and reveal where the error lies. Such a tool is especially advantageous for the use with recursive algorithms, as many times they may compile but not function correctly such as giving incorrect answers or entering infinite loops.&lt;/li&gt;&lt;/ul&gt;
+
+&lt;p&gt;Then we were asked to follow exercise 7 in unit 3, from the text &lt;a href="https://www.cs.unb.ca/~bremner/teaching/cs2613/books/FICS/Syntax_and_semantics.html"&gt;A Functional Introduction To Computer Science&lt;/a&gt; . We discussed the importance of unit testing within programming, and we learnt about Test Driven Development. Test  Driven Development (TDD) is a way of programming that involves writing tests before writing the code. The test will fail at first, but then the programmer will code the minimum amount needed to have the test pass, and then refactor the code and try new test cases. This way of development is a proven method to help improve code quality, it&amp;rsquo;s overall faster for debugging, and it helps prevent changes to code from breaking all functionality.&lt;/p&gt;
+
+&lt;p&gt;In this lab, I learnt about concept of Test Driven Development, and well as some new skills with Racket. While debugging is a very common skill that has been used in every coding class I&amp;rsquo;ve had to date (as seen in the Java courses CS 1073 and CS 1083, for example), the idea of Test Driven Development is a new and refreshing idea for me, and a concept I plan on putting to use in the future. I believe this skill would be exceptionally usefully when tackling problems that requires complex algorithms, as it will also help break complex problems down into more approachable tasks. It was also interesting to put this skill to work in today&amp;rsquo;s lab, and to experience a new (to me) approach to coding. I am still finding Racket to be a bit confusing with it&amp;rsquo;s syntax, as I am more used to Java and Python, but my knowledge and slowly growing and I&amp;rsquo;m excited to have another programming language under my belt. Overall, I am excited for the future of this course and what is planned for us. I hope I can leave with a much greater knowledge in coding, and have these hands on skills to apply later on in my career.&lt;/p&gt;&lt;a href="http://www.example.com/2025/01/lab-3-mason-tozer.html?utm_source=all&amp;amp;utm_medium=Atom"&gt;&lt;em&gt;More&amp;hellip;&lt;/em&gt;&lt;/a&gt;</content></entry>
+ <entry>
+  <title type="text">Lab 8 Mason Tozer</title>
+  <link rel="alternate" href="http://www.example.com/2025/01/lab-8-mason-tozer.html?utm_source=all&amp;utm_medium=Atom" />
+  <id>urn:http-www-example-com:-2025-01-lab-8-mason-tozer-html</id>
+  <published>2025-01-08T04:35:04Z</published>
+  <updated>2025-01-08T04:35:04Z</updated>
+  <author>
+   <name>The Unknown Author</name></author>
+  <content type="html">
+&lt;h1 id="cs-2613-lab-2-finishing-up-with-git-and-starting-off-with-racket"&gt;CS 2613 Lab 2: Finishing Up With Git and Starting off with Racket&lt;/h1&gt;
+
+&lt;p&gt;For our second lab in CS 2613, we continued where we left off from the first lab. We were given some pre-lab instructions to check and ensure that we understood the first lab correctly, and were given a reading on how to write &lt;a href="https://git-scm.com/book/en/v2/Distributed-Git-Contributing-to-a-Project#_commit_guidelines"&gt;good git commit messages&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;We started our second lab off by first finishing up our tutorial in git. We learned about the &lt;em&gt;git grep&lt;/em&gt; command, which is a fast and useful way to find strings within our git repositories. As well, we learned about the &lt;em&gt;git diff &amp;mdash;cached&lt;/em&gt; command, which will show us what has been modified since our last commit, before we commit the new changes. Our final lesson on the basics of Git discussed cleaning up generated files, which are files created by some tool or software, and can add some deceitful changes in our project&amp;rsquo;s commits history. It is best practice to &amp;lsquo;clean&amp;rsquo; up these files, and we can do so by running the Racket command &lt;em&gt;raco frog &amp;mdash;clean&lt;/em&gt;. We then used the previously learnt &lt;em&gt;git diff&lt;/em&gt; command to observe and learn what the frog clean command performs. We observed that it deleted the generated files for us, and saved us from having to manually delete each file, and avoid possible deleting an incorrect file. We then shared our best commit message with a neighbour, and gave some constructive feedback if we had any.&lt;/p&gt;
+
+&lt;p&gt;After completing our discussion on git, we then started to learn the basics of coding with the programing language &lt;em&gt;Racket&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;-          &lt;a href="https://docs.racket-lang.org/guide/intro.html"&gt;Racket&lt;/a&gt; is a beginner friendly, high level, programming language. Racket is used mostly for scripting, research, and for teaching computer programming as it is a very approachable language.&lt;/p&gt;
+
+&lt;p&gt;We will mostly be following the text &lt;a href="https://lms.unb.ca/d2l/home/257026"&gt;&lt;em&gt;A Functional Introduction To Computer Science&lt;/em&gt;&lt;/a&gt; as a guide for learning Racket. &lt;/p&gt;
+
+&lt;p&gt;The first few exercises in Racket given to us were covering some of the basics, such as a helloworld program, and some basic arithmetic. We were given some basic code and in groups of 2&amp;ndash;3, we were asked to try and identify what was wrong about each line of code and to try and fix it before trying it in DrRacket. At the end, we were given some reading to do before the next lab, like reading about Syntax and Semantics, the first two sections on the stepper function with DrRacket, and check-expects, which are all found in the text &lt;a href="https://lms.unb.ca/d2l/home/257026"&gt;&lt;em&gt;A Functional Introduction To Computer Science&lt;/em&gt;&lt;/a&gt;. We are also asked three questions; - What is a &lt;em&gt;remote&lt;/em&gt; ?  - A remote in git is a repository that can be accessed by multiple people, and it is saved in one generalized location. - What is &lt;em&gt;merging&lt;/em&gt; ?  - Merging within git is when two or more branches are combined into one. - What is a &lt;em&gt;conflict&lt;/em&gt; ?  - A conflict is when two branches of a project have different changes made to the same file, which usually only happens when programming in a team environment/ with two or more developers.&lt;/p&gt;
+
+&lt;p&gt;Some concepts learnt today are familiar from other courses, such as the use of git, which was used in my past software engineering class, and the idea of basic programming like creating the helloworld program, which was done in CS1073. But Racket is a whole new language and skill set for me, and I find the syntax has been a bit of learning curve, but I am excited to become better at it with more practice throughout the course. Though I do think the way Racket&amp;rsquo;s syntax does arithmetic is rather interesting and unique compare to my previous languages learned.&lt;/p&gt;&lt;a href="http://www.example.com/2025/01/lab-8-mason-tozer.html?utm_source=all&amp;amp;utm_medium=Atom"&gt;&lt;em&gt;More&amp;hellip;&lt;/em&gt;&lt;/a&gt;</content></entry>
+ <entry>
+  <title type="text">Lab 1 Mason Tozer</title>
+  <link rel="alternate" href="http://www.example.com/2025/01/lab-1-mason-tozer.html?utm_source=all&amp;utm_medium=Atom" />
+  <id>urn:http-www-example-com:-2025-01-lab-1-mason-tozer-html</id>
+  <published>2025-01-06T04:35:04Z</published>
+  <updated>2025-01-06T04:35:04Z</updated>
+  <author>
+   <name>The Unknown Author</name></author>
+  <content type="html">
+&lt;h1 id="cs-2613-lab-1-git-and-frog-basics"&gt;CS 2613 Lab 1: Git and Frog Basics&lt;/h1&gt;
+
+&lt;p&gt;For the introductory lab in this course, we covered some of the basics that will be used throughout the course. Some readings were given to be done before the first lab, such as reviewing the syllabus, Git and Frog basics, as well as a basic Shell background. We started by having a quick discussion of a brief course overview, along with some Q&amp;amp;A regarding the syllabus and other CS courses that were similar to this. We then installed frog and the tools required to use it, along with the python library pygments, which is used by frog for its syntax highlighting.&lt;/p&gt;
+
+&lt;p&gt;-          &lt;a href="https://docs.racket-lang.org/frog/index.html?q=frog"&gt;Frog&lt;/a&gt; is simply a static website generator and was written using the programming language Racket. Frog is going to be used in this course as a blog for our journal entries. Content on our ‘blogs’ will be written in either markdown or scribble formats.  Though we also learned that markdown is much more commonly used in the industry, thus markdown is generally the more encouraged format for this class. We practiced building our journal entries into &amp;lsquo;blogs&amp;rsquo; on a static website, to ensure they were able to build correctly.&lt;/p&gt;
+
+&lt;p&gt;We also discussed Git, and how it will be used throughout the course.&lt;/p&gt;
+
+&lt;p&gt;-          &lt;a href="https://git-scm.com/"&gt;Git&lt;/a&gt; is an open-source version control system, that is used mainly by programmers to record changes in their projects. Git is well suited for projects of any size, and is notable for its speed and efficiency.&lt;/p&gt;
+
+&lt;p&gt;We were asked to read the git-quickref page on D2L, and then we started with some Git basics. We learnt that Git has a heavy integration within the system’s terminal, and has many commands used for recording the changes within your project. Some of the notable ones we have learnt and will use within this course are:&lt;/p&gt;
+
+&lt;p&gt;-          A user can create a new repository (the storage location where you can track and manage the changes in your files and directories) using the &lt;em&gt;git init -b NAME&lt;/em&gt; command&lt;/p&gt;
+
+&lt;p&gt;-          They can add a remote repository (a storage location for your repository that is not within your system files. In our case, we are creating a remote within the FCS git repository) using the &lt;em&gt;git remote add NAME LOCATION&lt;/em&gt; command&lt;/p&gt;
+
+&lt;p&gt;-           A user can add files to the local repository using the command _git add FILENAME&lt;/p&gt;
+
+&lt;ul&gt;
+ &lt;li&gt;           A user can create a snapshot of their project in its current state, and have it saved to their local repository using the &lt;em&gt;git commit&lt;/em&gt; command&lt;/li&gt;&lt;/ul&gt;
+
+&lt;p&gt;-           They can then upload the changes made in their local repository to their remote location repository using the &lt;em&gt;git push –all REMOTE REPOSITORY NAME&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Some concepts of this lab were familiar from other CS courses that I have previously taken at UNB, such as the use of git, which I have previously used in my software engineering class. Though some concepts were new to me, such as Racket, Frog, and the markdown format. I caught on to the basics of these concepts pretty quickly, but I am eager to master them throughout our course.&lt;/p&gt;&lt;a href="http://www.example.com/2025/01/lab-1-mason-tozer.html?utm_source=all&amp;amp;utm_medium=Atom"&gt;&lt;em&gt;More&amp;hellip;&lt;/em&gt;&lt;/a&gt;</content></entry></feed>
