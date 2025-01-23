@@ -1,0 +1,11 @@
+#lang htdp/bsl
+(define (unique right lst)
+  (cond
+    [(empty? lst) empty]
+    [(cons? lst) (if (something? (first lst))
+                     ;;keep first element
+                    (cons (first lst)
+                          (unique-right (rest lst)))
+                    ;; drop first element
+                    (unique-right (rest lst)))]))
+(check-expect (unique-right empty) empty)

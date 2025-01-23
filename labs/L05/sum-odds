@@ -1,0 +1,12 @@
+#lang htdp/bsl
+(define (Length lst)
+  (cond
+    [(empty? lst) 0]
+    [(cons? lst)
+     (+
+      ;; process first (unconditionally)
+      (if (odd? (first lst) (first lst)) 0)
+      ;; process rest
+      (sum-odds (rest lst)))]))
+(check-expect
+ (

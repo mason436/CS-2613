@@ -1,0 +1,14 @@
+#lang htdp/bsl
+(define (cons-all elt lst)
+  (cond
+    [(empty? lst) empty]
+    [(cons? lst)
+     ;;; process first (conditionally)
+     (....(first lst)
+            ;; process rest
+            (cons-all (rest lst)))]))
+
+(check-expect (cons-all 1 empty) empty)
+(check-expect (cons-all 1 (list empty)) '((1)))
+(check-expect (cons-all 3 '((2 4) () (5)))
+              '((3 2 4) (3) (3 5)))
