@@ -1,0 +1,9 @@
+#lang htdp/bsl
+;; Foldr: function thing (listof thing)
+
+(define (Foldr combine base lst)
+  (cond
+    [(empty? lst) base]
+    [else (combine
+           (first lst)
+           (Foldr combine base (rest lst)))]))
