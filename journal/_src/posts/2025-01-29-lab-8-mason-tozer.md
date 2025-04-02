@@ -2,7 +2,7 @@ Title: Lab 6 Mason Tozer
     Date: 2025-01-29T16:25:01
     Tags: Lab6, CS2613, Racket, Lists
 # CS 2613 Lab 8: Working with Lists Racket
-As usual, we had some pre-lab work from the end of previous lab, which was asking us to read through [sections 5.1 and 5.2](https://www.cs.unb.ca/~bremner/teaching/cs2613/books/FICS/Lists.html) of our class text. 
+As usual, we had some pre-lab work from the end of previous lab, which was asking us to read through [section 6](https://www.cs.unb.ca/~bremner/teaching/cs2613/books/FICS/Lists.html) of our class text. 
 
 For our sixth lab in CS 2613 (though, we went over content from Lab 5 due to the [snow day](https://weatherspark.com/h/d/27856/2025/1/20/Historical-Weather-on-Monday-January-20-2025-in-Fredericton-New-Brunswick-Canada#metar-05-16) ) we started with the usual procedure of creating a new folder within our local repository as a workspace for today's exercises. This local repository will be pushed to our course git at the end of the lab.
 
